@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "ADHD Fix",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "menus",
+    "downloads",
+    "downloads.open",
+    "nativeMessaging",
+    "file:///*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/sslogo.png",
+      "48": "images/sslogo.png",
+      "128": "images/sslogo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/sslogo.png",
+      "48": "images/sslogo.png"
+    }
+  }
+}
